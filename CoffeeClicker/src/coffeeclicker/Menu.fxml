@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coffeeclicker.MenuController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleExitAction" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAboutMenuItem" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="133.0" prefWidth="800.0">
+         <children>
+            <Label text="Coffee Clicker">
+               <font>
+                  <Font name="Comic Sans MS" size="50.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="35.0" prefHeight="169.0" prefWidth="800.0">
+         <children>
+            <ImageView fx:id="titleImageView" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleStartNewGameButtonAction" prefWidth="150.0" text="Start New Game">
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="22.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleLoadGameButtonAction" prefWidth="150.0" text="Load Game">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="22.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleExitAction" prefWidth="150.0" text="Exit">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="109.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="versionLabel" text="v1.1.1">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="15.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
